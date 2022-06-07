@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <link rel="stylesheet" href="./style/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,600&family=Fraunces:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+      <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+            <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+        </div>
+        <div class="hamburger"><a href="javascript:void(0)" onclick="openMenu()"><i class="fa-solid fa-bars"></i></a></div>
+        <div id="nav">
+            <div class="arrowleft"></div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+      <div class="title">
+        <div class="head-title">
+            <h1>We are creatives</h1>
+        </div>
+        <div class="arrow">
+            <a href="#main"><img src="./images/icon-arrow-down.svg" alt="" aria-label="hidden"></a>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+        <section class="transform">
+            <div class="content-img">
+                <img src="./images/desktop/image-transform.jpg" alt="transform">
+            </div>
+            <article class="content">
+                <h2>Transform your brand</h2>
+                <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <a href="#">Learn More</a>
+            </article>
+        </section>
+        <section class="standout">
+            <div class="content-img">
+                <img src="./images/desktop/image-stand-out.jpg" alt="standout">
+            </div>
+            <article class="content">
+                <h2>Stand out to the right audience</h2>
+                <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+                <a href="#">Learn More</a>
+            </article>
+        </section>
+        <section class="footcontent">
+            <section class="graphic">
+                <div class="content gd">
+                    <h2>Graphic Design</h2>
+                    <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+                </div>
+            </section>
+            <section class="photography">
+                <div class="content pho">
+                    <h2>Photography</h2>
+                    <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                </div>
+            </section>
+        </section>
+        <section class="testimonial">
+            <h2>client testimonials</h2>
+            <div class="flex-testimonial">
+                <div class="person1">
+                    <div class="testi-img">
+                        <img src="./images/image-emily.jpg" alt="emily">
+                    </div>
+                    <div class="testi-text">
+                        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                    </div>
+                    <div class="testi-foot">
+                        <h3 class="name">Emily R.</h3>
+                        <h4 class="job">Marketing Director</h4>
+                    </div>
+                </div>
+                <div class="person2">
+                    <div class="testi-img">
+                        <img src="./images/image-thomas.jpg" alt="thomas">
+                    </div>
+                    <div class="testi-text">
+                        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                    </div>
+                    <div class="testi-foot">
+                        <h3 class="name">Thomas S.</h3>
+                        <h4 class="job">Chief Operating Officer</h4>
+                    </div>
+                </div>
+                <div class="person3">
+                    <div class="testi-img">
+                        <img src="./images/image-jennie.jpg" alt="jennie">
+                    </div>
+                    <div class="testi-text">
+                        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                    </div>
+                    <div class="testi-foot">
+                        <h3 class="name">Jennie F.</h3>
+                        <h4 class="job">Bussiness Owner</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="foot-img">
+            <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="milkbottles">
+            <img src="./images/desktop/image-gallery-orange.jpg" alt="orange">
+            <img src="./images/desktop/image-gallery-cone.jpg" alt="cone">
+            <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes">
+        </section>
+    </main>
+    <footer>
+        <img src="./images/logo-footer.svg" alt="logo">
+        <div class="footer-navbar">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </div>
+        <div class="media-social">
+            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-square"></i></a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/736f9082a4.js" crossorigin="anonymous"></script>
+    <script>
+        function openMenu() {
+            var x = document.getElementById('nav');
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+  </body>
+</html>
